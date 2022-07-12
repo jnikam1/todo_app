@@ -23,7 +23,8 @@ app.listen(PORT || 8080,()=>{
 })
 
 const mongoURI = process.env.MONGOURI
-mongoose.connect(mongoURI)
+const MongoURISring = "mongodb+srv://jnikam1:1234@cluster0.8uptl.mongodb.net/TodoApp?retryWrites=true&w=majority"
+mongoose.connect(MongoURISring)
 .then(()=>{
     console.log("Sucessfully connected to Database")
 })
