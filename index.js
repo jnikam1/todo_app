@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 
 const PORT = process.env.PORT
 
-app.listen(PORT,()=>{
+app.listen(PORT || 8080,()=>{
     console.log("Succesfully connected to Port "+ PORT)
 
 })
