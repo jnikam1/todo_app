@@ -36,6 +36,8 @@ const read  = async (req,res,next) =>{
                 })
             }
 
+    }).clone().catch(function(err){
+        console.log(err)
     })
 }
 
