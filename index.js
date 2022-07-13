@@ -3,9 +3,13 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const router = require('./routes/todo.routes')
 require('dotenv').config()
+const cors = require('cors')
+var corsOptions = {origin:"http://localhost:3000/"}
+
 
 const app = express()
 
+app.use(cors(corsOptions))
 app.use(bodyParser.json())
 
 app.use('/todo',router)
