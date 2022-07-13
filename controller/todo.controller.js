@@ -18,6 +18,8 @@ const create = async (req,res,next ) =>{
 
             }
 
+    }).clone().catch(function(err){
+        console.log(err)
     })
 }
 
@@ -55,6 +57,8 @@ const update = async (req,res,next) =>{
                 })
             }
 
+    }).clone().catch(function(err){
+        console.log(err)
     })
 }
 
@@ -72,6 +76,8 @@ const deleteTodo = async(req,res,next) =>{
                 })
             }
 
+    }).clone().catch(function(err){
+        console.log(err)
     })
 }
 
