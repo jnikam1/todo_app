@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const router = require('./routes/todo.routes')
 require('dotenv').config()
 const cors = require('cors')
-var corsOptions = {origin:"http://localhost:3000/"}
+var corsOptions = {origin:"http://localhost:3000"}
 
 
 const app = express()
